@@ -5,3 +5,8 @@
              16       11    21                       8   12           22
                   11  16  21                                 8  12  22 
                                 8  11  12  16  21  22
+
+--> BAŞLIKSIZ DİYAGRAM GÖSTERİM
+
+Big-O gösterimini yazınız:
+Her adımda O(n) işlem yapmakta ve bunu n kere tekrar ediyor, bu nedenle Big-O notosyano gösterimi nLogn oluyor.
