@@ -1,0 +1,75 @@
+CREATE TABLO employee (
+  id INTEGER PRIMARY KEY,
+  name VARCHAR(50) not NULL,
+  birthday DATE,
+  email varchar(100)
+  );
+
+INSERT INTO employee (name, birthday, email)
+VALUES
+  (Raynor,12/18/2023,rklimkovich0@so-net.ne.jp
+  Dion,4/19/2024,dtummasutti1@vkontakte.ru
+  Clarke,10/6/2023,ceates2@constantcontact.com
+  Brand,6/14/2024,bricca3@1und1.de
+  Kerianne,1/21/2024,kbalharry4@bbc.co.uk
+  Benjamen,10/3/2023,bbradnock5@altervista.org
+  Walker,2/2/2024,wvela6@nifty.com
+  Bennie,4/6/2024,bplampin7@hibu.com
+  Julie,10/8/2023,jmuff8@wikipedia.org
+  Nataline,2/3/2024,ndedomenico9@census.gov
+  Ambrose,6/28/2024,afarrowa@xrea.com
+  Derick,5/27/2024,dhargravesb@go.com
+  Burnaby,5/5/2024,bbeiderbeckc@theguardian.com
+  Silvie,5/25/2024,stroueld@timesonline.co.uk
+  Tatiania,10/31/2023,twallicee@npr.org
+  Bendite,7/3/2024,bsuscensf@uol.com.br
+  Tucker,9/7/2024,tkenving@vimeo.com
+  Ignacius,6/5/2024,ifianderh@foxnews.com
+  Bonnibelle,10/8/2023,bmatusi@marketwatch.com
+  Paolo,1/31/2024,pkeunemannj@ask.com
+  Jenilee,7/13/2024,jtolussik@skype.com
+  Cecil,5/16/2024,csanperel@cargocollective.com
+  Nerty,12/27/2023,nciubutarom@fc2.com
+  Hart,11/15/2023,hedwicken@amazon.com
+  Carmella,7/25/2024,cleymano@dagondesign.com
+  Hurley,1/3/2024,hlutzmannp@unicef.org
+  Colan,8/18/2024,csegraveq@vistaprint.com
+  Shelbi,10/24/2023,sprettyjohnr@ustream.tv
+  Verge,10/18/2023,vtroyess@mozilla.org
+  Anthony,10/11/2023,acurthoyst@cnet.com
+  Jana,6/18/2024,jpergensu@kickstarter.com
+  Harriett,7/23/2024,hfoxcroftv@tumblr.com
+  Ferdie,3/16/2024,fattridew@privacy.gov.au
+  Jeniffer,5/8/2024,jtenchx@jalbum.net
+  Melody,8/11/2024,mallawyy@fema.gov
+  Gothart,5/19/2024,gcarffz@usda.gov
+  Erinn,6/5/2024,eclowsley10@thetimes.co.uk
+  Dorrie,1/13/2024,dodulchonta11@ifeng.com
+  Hedy,5/24/2024,hmarrows12@cafepress.com
+  Duky,6/29/2024,dbyron13@about.me
+  Andrea,5/19/2024,achristaeas14@ebay.co.uk
+  Tybie,5/1/2024,tulster15@skype.com
+  Shurlocke,7/19/2024,smoseby16@digg.com
+  Eliza,7/20/2024,emack17@dyndns.org
+  Marena,3/15/2024,mmccrow18@xinhuanet.com
+  Gerrie,4/23/2024,glawrenceson19@rambler.ru
+  Rosalinde,1/16/2024,rmelmore1a@sina.com.cn
+  Brnaba,9/25/2023,bcreddon1b@meetup.com
+  Charlot,12/28/2023,ccragg1c@people.com.cn
+  Rosalynd,4/29/2024,rivancevic1d@jugem.jp
+  Derrek,2/10/2024,dvossgen1e@ning.com);
+
+SELECT * FROM employee;
+
+CREATE TABLO employee_2 AS
+SELECT * FROM employee;
+
+UPDATE employee_2
+  SET name='Charlot',
+      birthday='7/19/2024',
+      mail='hmarrows12@cafepress.com'
+WHERE id = 5;
+RETURNING *;
+
+DELETE FROM employee_2
+WHERE id= 5;
